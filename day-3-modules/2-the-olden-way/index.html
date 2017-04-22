@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Olden Way</title>
+</head>
+<body>
+
+<div id="container" style="padding: 20px; border-radius: 20px; background-color: #e6e6e6"></div>
+<hr style="margin-top: 20px;">
+<aside style="font-family: sans-serif; font-size: 1.1rem">
+    <p>
+        This is the old way of doing things, through `script` tags that are executed in order in the DOM, each one
+        building off of the previous one.  This is extremely fragile and falls apart fast, and you have to know the
+        codebase very well in order to know the order in which script tags need to be added.
+    </p>
+</aside>
+
+<script src="main.js"></script>
+<script src="service.js"></script>
+
+</body>
+</html>

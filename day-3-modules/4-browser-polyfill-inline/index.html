@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Browser Polyfill</title>
+</head>
+<body>
+
+<div id="container" style="padding: 20px; border-radius: 20px; background-color: #e6e6e6"></div>
+<hr style="margin-top: 20px;">
+<aside style="font-family: sans-serif; font-size: 1.1rem">
+    <p>
+        Using the browser polyfill, the simplest approach is to define our entry point in a script tag, and allow it
+        to run its imports directly from the markup.  Note that the `type="module"` attribute sets this script tag
+        apart from typical script tags that just run JS in the template, in that its contents run in an isolated scope.
+    </p>
+</aside>
+
+
+<!-- Loading the polyfills... -->
+<script src="../../node_modules/browser-es-module-loader/dist/babel-browser-build.js"></script>
+<script src="../../node_modules/browser-es-module-loader/dist/browser-es-module-loader.js"></script>
+
+<script>
+    var globalVar = 'defined on the global scope';
+</script>
+
+<script type="module">
+
+    // import functionality from another file
+    import { setStrings } from './service.js';
+
+    // use it in this file
+//    setStrings(container, 'h2', 'p', 'pre');
+
+    // no problems with global scope
+    var elemArr = ['h2', 'p', 'pre'];
+
+    setStrings(container, ...elemArr);
+
+    // mind blown
+
+</script>
+<script>
+    console.log(globalVar);
+    console.log(elemArr);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+{
+  "name": "esNextBreakfastSeries",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "3-1": "node_modules/.bin/webpack --config day-3-modules/1-what-are-they/webpack.config.js",
+    "3-7": "node_modules/.bin/webpack --config day-3-modules/7-default-export/webpack.config.js",
+    "3-8": "node_modules/.bin/webpack --config day-3-modules/8-named-export/webpack.config.js",
+    "3-9": "node_modules/.bin/webpack --config day-3-modules/9-multiple-named-exports/webpack.config.js",
+    "3-10": "node_modules/.bin/webpack --config day-3-modules/10-import-as-namespace/webpack.config.js",
+    "3-11": "node_modules/.bin/webpack --config day-3-modules/11-re-exporting/webpack.config.js",
+    "3-12": "node_modules/.bin/webpack --config day-3-modules/12-import-everything/webpack.config.js",
+    "4-1": "node_modules/.bin/webpack --config day-4-classes/1-review-prototype/webpack.config.js",
+    "4-2": "node_modules/.bin/webpack --config day-4-classes/2-introducing-classes/webpack.config.js",
+    "4-3": "node_modules/.bin/webpack --config day-4-classes/3-review-prototype-inheritance/webpack.config.js",
+    "4-4": "node_modules/.bin/webpack --config day-4-classes/4-classical-inheritance/webpack.config.js",
+    "4-5": "node_modules/.bin/webpack --config day-4-classes/5-mulitple-inheritance/webpack.config.js",
+    "4-6": "node_modules/.bin/webpack --config day-4-classes/6-static-methods/webpack.config.js",
+    "4-7": "node_modules/.bin/webpack --config day-4-classes/7-getters-setters/webpack.config.js",
+    "6-5": "node_modules/.bin/webpack --config day-6-iterators-generators/5-practical-auth-flow/webpack.config.js",
+    "6-6": "node_modules/.bin/webpack --config day-6-iterators-generators/6-practical-interaction/webpack.config.js",
+    "7-1": "node_modules/.bin/webpack --config day-7-promise-async/1-introducing-promises/webpack.config.js",
+    "7-5": "node_modules/.bin/webpack --config day-7-promise-async/5-async-await/webpack.config.js",
+    "8-3": "node_modules/.bin/webpack --config day-8-composition-decorators/3-method-decorators/webpack.config.js",
+    "8-4": "node_modules/.bin/webpack --config day-8-composition-decorators/4-method-modifiers/webpack.config.js",
+    "8-5": "node_modules/.bin/webpack --config day-8-composition-decorators/5-class-decorators/webpack.config.js",
+    "8-6": "node_modules/.bin/webpack --config day-8-composition-decorators/6-decorator-values/webpack.config.js",
+    "8-7": "node_modules/.bin/webpack --config day-8-composition-decorators/7-combining-decorators/webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.build.ge.com:nola-guilds/esNextBreakfast.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.81.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^6.4.1",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-preset-latest": "^6.24.1",
+    "browser-es-module-loader": "^0.4.1",
+    "node-es-module-loader": "^0.3.6",
+    "webpack": "^2.2.1"
+  }
+}
